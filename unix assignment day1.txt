@@ -1,4 +1,4 @@
-Pageno 41:
+                                      Try slide Pageno 41:
 
 1. mkdir test
 
@@ -30,7 +30,7 @@ Pageno 41:
 10. wc -l employeelist
 
 
-Pageno 47:
+                                          Try slide Pageno 47:
 
 1. vi file1
 
@@ -53,13 +53,17 @@ Pageno 47:
 10. cp file1 file2 2>errorlog
 
 
-pageno 55:
+                                         Try slide pageno 55:
 
 1. head -25 file1 | tail+10
 
 2. head -10 file1 | tail+10
 
 3. ls -t | head -l
+
+4.  ls -lsr | sort
+
+5.  wc_records
 
 
 
