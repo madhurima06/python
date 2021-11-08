@@ -1,0 +1,131 @@
+                           Try slide pageno61
+
+
+1.grep "A" file
+
+2.grep "^The" file
+
+3.grep "\.$" file
+
+4.grep "^.[a-c]" file
+
+5.grep "def deef deeeef" file
+
+6.grep -v "^[0-9]" file
+
+7.empty lines
+
+8.grep "[user1-user10]" password
+
+9.ls -l | grep ^d 
+
+10.ls -l |grep math.h
+
+                               Try slide pageno63
+
+1.
+	
+2.ls | sort -r
+
+3.ls -li | sort -n
+
+4.ls -lr | sort -k 3
+
+  ls -lr | sort -k 4
+
+5.ls -laS >sortedfile
+
+  cat sortedfile
+
+                               Try slide pageno64
+
+
+1.echo SOFWARE | tr [:UPPER]  [:LOWER] (sonata)
+
+2.sed -i 's/^[0-9].*$//g' file1
+
+3.cat file1 | sed 's/ //g'
+
+4.
+
+5.wc file1
+
+6.grep -o -i mauris file1|wc -l
+
+
+                             Try slide pageno92
+
+
+1.press-O
+
+2.press dd-to remove and u -undo
+
+3./bc
+
+4.1,$s/number/ /g  
+
+5.1 s/c/C/g
+
+6.1,$s/ /\t/g                     
+
+
+                             Try slide pageno94
+
+
+1.echo "header"> newfile
+
+2.sed '2d' file1, u for undo
+
+8.3dd
+
+9.2u
+
+10.:wq (for save) "bc_v2"
+
+
+                             Try slide pageno116
+
+	
+Run a sort command of a large file at the background
+	sleep 100&
+		write down pid 
+	ps -l
+		write pid and ppid then logoff and login again
+	ps -l
+		then observe that pid and ppid will be not there
+
+Run a sort command of a large file at the background using nohup
+	nohup sleep 100&
+		write down pid 
+	ps -l
+		write pid and ppid then logoff and login again
+	ps -l
+		then observe that pid will be there but ppid will be not there
+
+Write a command that sleeps for 5 seconds and then prints hello
+	sleep 5s
+	echo "hello"
+              
+
+                            Try slide pageno118
+
+
+Write the command to send birthday wishes to your friend, whose birthday is tomorrow
+	---->echo "happy birthday" | at now +1 day
+
+
+
+                            Try slide pageno120
+
+
+Try the commands done with at using crontab
+	crontab (to schedule job)
+	* * * * * >f10 (scheduled job which will create f1o file every minute)
+	crontab -l	        (to check previous scheduled job)
+	at now +1 minute	(schedule job)
+	sleep 100&		(scheduled job)
+	at -l			(to see scheduled job)
+	at -r jobno(46)		(remove job)
+	crontab -r		(remove job
+
+
